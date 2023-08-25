@@ -1,0 +1,350 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  overflow-x: hidden;
+}
+.general-body{
+  max-width: 2200px;
+  margin : 0 auto;
+}
+.header{
+  max-width: 2010px;
+  margin: 0 auto;
+}
+.home-hero-h1{
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  @apply laptop:text-[70px]
+}
+.hero-h1 {
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  @apply mt-2 tablet:text-center
+  
+}
+.hero-p{
+  font-size: 18px;
+}
+/* for background-images */
+.hero-section{
+  background-image: url(../public/images/extracare-mobile.jpg);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+ @apply flex w-full bg-darknavyblue h-[450px] laptop:h-[650px] pt-[3rem]
+}
+.careservices-page{
+  background-image: url(../public/images/careservice-mobile.jpg);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+
+
+}
+
+.about-page{
+  background-image: url(../public/images/about-mobile.jpg);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+
+}
+.homecare-page,.dementia-care-page{
+  background-image: url(../public/images/homecare-hero-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center;
+}
+.extracare-page{
+  background-image: url(../public/images/extracare-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center; 
+}
+.healthybody-page{
+  background-image: url(../public/images/healthybody-hero-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center;
+}
+.mindbody-page{
+  background-image: url(../public/images/mindbody-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center;
+}
+.putting-you-first-page{
+  background-image: url(../public/images/putting-you-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center;
+}
+.nightcare-page{
+  background-image: url(../public/images/nightcare-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center;
+}
+/* for special care */
+.end-of-life-page,.stroke-care-page,.hypertension-care-page{
+  background-image: url(../public/images/endof-life-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center;
+}
+.physical-disability-page{
+  background-image: url(../public/images/physical-disability-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center;
+}
+.learning-disablility-page{
+  background-image: url(../public/images/learning-disability-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center;
+}
+.contactpage-hero{
+  background-image: url(../public/images/contactpage-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center;
+}
+/* background-images ends here */
+p{
+ font-size: 18px; 
+}
+
+li{
+  list-style: disc;
+  font-size: 18px;
+}
+.accordions{
+  border: 2px solid #008BCB;
+  border-radius: 5px;
+}
+
+/* general stylin ends here  */
+.body-title{
+  font-size: 35px;
+  font-weight: 600;
+}
+.body-container{
+  @apply pt-12 pl-4 pr-4
+}
+.support-page-link{
+  border: 2px solid #091D3E;
+  border-radius: 5px;
+  height: 65px;
+}
+.animated-btn{
+  content: " ";
+  transition: transform .3s;
+  transform-origin: 0 0; 
+  transform: scaleX(0);
+  /* transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);  */
+  @apply w-[100%] h-[65px] bg-darknavyblue absolute left-0 -z-10
+}
+.animated-btn:hover::before{
+  transform: scaleX(1);
+
+}
+.support-page-link::before{
+  content: " ";
+  transition: transform .3s;
+  transform-origin: 0 0; 
+  transform: scaleX(0);
+  /* transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);  */
+  @apply w-[100%] h-[65px] bg-darknavyblue absolute left-0 -z-10
+}
+.support-page-link:hover::before{
+  transform: scaleX(1);
+
+}
+/* for box-shadow */
+.box{
+  /* border: 2px solid #008BCB; */
+  box-shadow: 0px 0px 2rem -1rem rgb(148, 148, 148);
+  margin: 0 auto;
+  @apply rounded-[5px] pl-4 pr-4 pb-10 h-[400px] w-[350px] mt-8  justify-center
+  
+}
+.frequently_asked_question_box{
+ border: 2px solid #091D3E;
+ border-radius: 5px 5px 0px 0px;
+  @apply w-[100%] h-[80px] items-center pl-2 pr-2 laptop:pl-4 laptop:pr-4 pt-4 pb-4
+}
+.frequently_asked_question_box2{
+ 
+ border-radius: 0px 0px 5px 5px;
+  
+}
+
+/* for extrapages */
+.extrapage-hero{
+  @apply bg-darknavyblue h-[350px] laptop:h-[650px] pl-4 pr-4 pt-[7rem] laptop:pt-[14rem] laptop:mb-4
+}
+.extrapage-hero h1{
+  @apply laptop:text-center text-white mb-2
+}
+.extrapage-hero p{
+  @apply laptop:text-center w-[100%] mt-3 laptop:w-full text-white laptop:text-[24px]
+}
+.extrapage-texts{
+  @apply laptop:w-[50%]
+}
+
+.about-hero{
+  @apply h-[400px] laptop:h-[650px] flex justify-center items-center
+}
+
+
+
+
+@media screen and (min-width : 1200px) {
+ /* for background-images */
+ .homecare-page,.dementia-care-page{
+  background-image: url(../public/images/home-care-hero.jpg);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center;
+}
+.extracare-page{
+  background-image: url(../public/images/home-hero-laptop.jpg);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center; 
+}
+.healthybody-page{
+  background-image: url(../public/images/healthybody-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center;
+}
+.mindbody-page{
+  background-image: url(../public/images/mindbody-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center;
+}
+
+.hero-section{
+  background-image: url(../public/images/home-hero-laptop.jpg);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center;
+ @apply flex w-full bg-darknavyblue h-[450px] laptop:h-[650px] pt-[3rem]
+}
+.careservices-page{
+  background-image: url(../public/images/care-service-hero.jpg);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center;
+}
+
+.about-page{
+  background-image: url(../public/images/about-us-hero.jpg);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center;
+
+}
+.putting-you-first-page{
+  background-image: url(../public/images/putting-you.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center;
+}
+
+.nightcare-page{
+  background-image: url(../public/images/nightcare-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center;
+}
+
+.end-of-life-page,.stroke-care-page,.hypertension-care-page{
+  background-image: url(../public/images/endof-life.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center;
+}
+.physical-disability-page{
+  background-image: url(../public/images/physical-disability-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center;
+}
+.learning-disablility-page{
+  background-image: url(../public/images/learning-disability.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center;
+}
+.contactpage-hero{
+  background-image: url(../public/images/contact-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center;
+}
+/*  */
+ 
+  .box{
+  margin: unset;
+  @apply w-auto
+ }
+ 
+  p{
+    font-size: 20px;
+    color: #091D3E;
+  }
+  .hero-h1 {
+    font-size: 73px;
+  font-weight: bold;
+
+  }
+  .body-title{
+    font-size: 48px;
+    font-weight: 600;
+  }
+  .hero-p{
+    font-size: 24px;
+  }
+  .line{
+    @apply -mt-[1rem]
+  }
+
+  
+}
